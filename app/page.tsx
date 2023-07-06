@@ -1,7 +1,6 @@
 import Link from "next/link";
 import prisma from "./db";
 import TodoItem from "./components/TodoItem";
-import { remove } from "next/dist/build/webpack/loaders/resolve-url-loader/lib/file-protocol";
 
 interface Todo {
   id: string;
@@ -61,7 +60,7 @@ const App = async () => {
       </header>
       <ul className="pl-4">
         {todos.map((todo) => (
-          <TodoItem {...todo} toggleTodo={toggleTodo} />
+          <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo} />
         ))}
       </ul>
     </>

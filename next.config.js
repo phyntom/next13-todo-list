@@ -9,6 +9,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   distDir: 'build',
+  output:"standalone"
 };
 
 module.exports = nextConfig;

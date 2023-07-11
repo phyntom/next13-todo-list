@@ -1,0 +1,4 @@
+{
+	"appService.defaultWebAppToDeploy": "/subscriptions/18253731-2f4e-4ed7-80a9-7a011798ab45/resourceGroups/aruh-rgLab/providers/Microsoft.Web/sites/next13-todo",
+	"appService.deploySubpath": "."
+}
